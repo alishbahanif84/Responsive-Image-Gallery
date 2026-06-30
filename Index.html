@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Image Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--================ NAVBAR =================-->
+
+    <header>
+
+        <h2 class="logo">
+            Image<span>Gallery</span>
+        </h2>
+
+        <button id="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+    </header>
+
+    <!--================ HERO =================-->
+
+    <section class="hero">
+
+        <h1>Responsive Image Gallery</h1>
+
+        <p>
+            Beautiful HTML CSS JavaScript Gallery with
+            Lightbox, Filters, Hover Effects,
+            Responsive Layout and Dark/Light Theme.
+        </p>
+
+    </section>
+
+    <!--================ FILTER BUTTONS =================-->
+
+    <section class="filters">
+
+        <button class="filter-btn active" data-name="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-name="nature">
+            Nature
+        </button>
+
+        <button class="filter-btn" data-name="city">
+            City
+        </button>
+
+        <button class="filter-btn" data-name="animals">
+            Animals
+        </button>
+
+    </section>
+
+    <!--================ GALLERY =================-->
+
+    <section class="gallery">
+
+        <!-- Nature -->
+
+        <div class="image nature">
+            <img src="images/Nature1.jpg" alt="">
+        </div>
+
+        <div class="image nature">
+            <img src="images/Nature2.jpg" alt="">
+        </div>
+
+        <div class="image nature">
+            <img src="images/Nature3.jpg" alt="">
+        </div>
+
+        <!-- City -->
+
+        <div class="image city">
+            <img src="images/city1.jpg" alt="">
+        </div>
+
+        <div class="image city">
+            <img src="images/city2.jpg" alt="">
+        </div>
+
+        <div class="image city">
+            <img src="images/city3.jpg" alt="">
+        </div>
+
+        <!-- Animals -->
+
+        <div class="image animals">
+            <img src="images/ANimal1.jpg" alt="">
+        </div>
+
+        <div class="image animals">
+            <img src="images/Animal2.jpg" alt="">
+        </div>
+
+        <div class="image animals">
+            <img src="Images/Animal3.jpg" alt="">
+        </div>
+
+    </section>
+
+    <!--================ LIGHTBOX =================-->
+
+    <div class="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="prev">
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <img id="lightbox-img" src="" alt="">
+
+        <button class="next">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+    </div>
+
+    <!--================ FOOTER =================-->
+
+    <footer>
+
+        <p>
+            © 2026 Responsive Image Gallery | HTML CSS JavaScript
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
